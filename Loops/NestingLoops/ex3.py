@@ -33,7 +33,7 @@ for i in range(1, 6):
 # 0 1
 # 0
 
-# Which of the following will have the identical output as the one above?
+# 2.Which of the following will have the identical output as the one above?
 for i in range(1, 6):
     for j in range(0, i):
         print(j, end = " ")
