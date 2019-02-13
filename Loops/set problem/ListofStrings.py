@@ -1,0 +1,54 @@
+mystery_list = ["Taylor Swift", "Twenty Two", "Georgia Tech"]
+
+
+# Above is a list of strings. Don't worry if this syntax is a
+# little unfamiliar, we'll talk you through it and then cover
+# it more in chapter 4.3.
+#
+# Write some code that will count the number of instances of
+# the letter 't' in the list of strings. Count both capital
+# 'T' and lower-case 't'. Then, print the number of instances
+# of the letter 't'.
+#
+# For example, with the list declared above, you would print
+# 6: two in the first string, three in the second, one in the
+# third.
+#
+# Because we haven't used lists very extensively, we've
+# gotten you started. The loop below will iterate through each
+# string in the list. Next, you want to iterate through each
+# letter in the current string, check if it's a t, and
+# increment a counter if so.
+
+
+# You'll want to add some code before the loop here.
+count_t = 0
+count_T = 0
+
+for string in mystery_list:
+    # Add your code to read through the string and count the
+    # t's and T's here!
+    for currentCharacter in string:
+        if currentCharacter == "t":
+            count_t += 1
+    # print(count_t)
+        elif currentCharacter == "T":
+            count_T += 1
+
+# Add some code here to print the final tally!
+print(count_t + count_T)
+
+########################################################
+# Gtx Solution
+# Here's our solution. First, we initialize a counter to count
+# the number of t's that we found. Then, we iterate through
+# each string in the list (the first for loop) and each letter
+# in the current string (the second for loop). If that letter
+# is a t, then we add one to count.
+
+count = 0
+for string in mystery_list:
+    for letter in string:
+        if letter == 't' or letter == 'T':
+            count += 1
+print(count)
